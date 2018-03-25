@@ -1,0 +1,11 @@
+<%=form_with(model: @posts, local: true) do |form| %>
+	<%=form.label :title %>
+	<%=form.text_field :title %>
+	<br>
+	<%=form.label :content %>
+	<%=form.text_area :content %>
+	<br>
+	<%=form.submit 'Crear' %>
+	<br>
+	<%= link_to 'volver a index', root_path %>
+<% end %>
